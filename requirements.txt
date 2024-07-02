@@ -1,2 +1,4 @@
+openai
 jinja2
 requests
+beautifulsoup4
