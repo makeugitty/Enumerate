@@ -106,10 +106,10 @@ def generate_enumeration_guide(vulnerabilities):
     output = template.render(vulnerabilities=data, generate_enumeration_steps=generate_enumeration_steps)
 
     # Save to a file
-    with open('/Users/jonfab/Desktop/WebAppScan/enumeration_guide.md', 'w') as file:
+    with open('YOURPATH/enumeration_guide.md', 'w') as file: # YOURPATH IS WHERE YOU WANT IT
         file.write(output)
 
-    print("Enumeration guide has been created as '/Users/jonfab/Desktop/WebAppScan/enumeration_guide.md'.")
+    print("Enumeration guide has been created as 'YOURPATH/enumeration_guide.md'.") # YOURPATH IS WHERE YOU WANT IT
 
 # Main function
 def main():
