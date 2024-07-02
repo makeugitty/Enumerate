@@ -9,7 +9,7 @@ This project provides a script to generate an enumeration guide for network vuln
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
 - [Customization](#customization)
-- [License](#license)
+
 
 ## Features
 - Automatically generates detailed enumeration steps for identified network services.
