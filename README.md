@@ -96,10 +96,15 @@ This project provides a script to generate an enumeration guide for network vuln
 
 WebAppScan/
 │
+
 ├── vulnerabilities.json # JSON file with scan results
+
 ├── enumerate.py # Main script to generate enumeration guide
+
 ├── enumeration_guide.md # Output file (generated)
+
 ├── requirements.txt # List of dependencies
+
 └── README.md # This README file
 
 
