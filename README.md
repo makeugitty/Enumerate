@@ -116,11 +116,6 @@ WebAppScan/
 - **Add More Sources**: Extend the `search_exploits` function to query other sources for exploits, such as GitHub.
 - **Adjust Output Format**: Modify the Jinja2 template to change the format of the output Markdown file.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
 For any issues or contributions, feel free to open an issue or submit a pull request on the GitHub repository. Happy scanning and stay secure!
 
