@@ -3,13 +3,41 @@ import openai
 from jinja2 import Template
 
 # Replace with your actual API key
-API_KEY = 'YOUR-API-KEY'
+API_KEY = 'YOUR_API_KEY'
 openai.api_key = API_KEY
 
 # Function to call the AI API to generate enumeration steps
 def generate_enumeration_steps(port, service, version):
     prompt = f"""
-    Provide detailed steps to enumerate the {service} service running on port {port}, version {version}. Include initial steps, tools to use, commands to run, and what to look for in the results.
+   Given a specific network service, your task is to analyze its security posture comprehensively. Follow the structured approach below to ensure a thorough evaluation:
+
+1. **Service Identification**
+   - **Service Name**: {service}
+   - **Port Number**: {port}
+   - **Version**: {version}
+
+2. **Initial Analysis**
+   - Describe the initial steps to gather more information about the specified service. What tools and commands would you use to perform a detailed service enumeration?
+
+3. **Tools and Commands**
+   - List the tools and commands required for an in-depth analysis of the service running on the specified port. Include syntax examples for clarity.
+
+4. **Analyzing Results**
+   - Explain what to look for in the output of the tools and commands used. Highlight indicators of potential vulnerabilities or misconfigurations.
+
+5. **Vulnerability Identification**
+   - Based on the service version and initial analysis, identify known vulnerabilities associated with this service. Reference specific CVEs (Common Vulnerabilities and Exposures) if applicable.
+
+6. **Exploitation Guide**
+   - Provide a step-by-step guide for exploiting identified vulnerabilities. Include:
+     - Required tools and their installation commands.
+     - Specific commands to exploit the vulnerability, including any necessary payloads.
+     - Tips on ensuring successful exploitation.
+
+7. **Mitigation Measures**
+   - Suggest mitigation measures or best practices to protect against identified vulnerabilities.
+
+Please ensure that your analysis is conducted ethically and within legal boundaries. Unauthorized testing on systems without explicit permission is illegal and unethical.
     """
     
     try:
