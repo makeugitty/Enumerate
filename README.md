@@ -94,3 +94,28 @@ This project provides a script to generate an enumeration guide for network vuln
 
 ## Directory Structure
 
+WebAppScan/
+│
+├── vulnerabilities.json # JSON file with scan results
+├── enumerate.py # Main script to generate enumeration guide
+├── enumeration_guide.md # Output file (generated)
+├── requirements.txt # List of dependencies
+└── README.md # This README file
+
+
+
+
+## Customization
+
+- **Modify OpenAI Prompt**: Customize the prompt in the `generate_enumeration_steps` function to change the type of information generated.
+- **Add More Sources**: Extend the `search_exploits` function to query other sources for exploits, such as GitHub.
+- **Adjust Output Format**: Modify the Jinja2 template to change the format of the output Markdown file.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+For any issues or contributions, feel free to open an issue or submit a pull request on the GitHub repository. Happy scanning and stay secure!
+
