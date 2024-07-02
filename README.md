@@ -90,7 +90,7 @@ This project provides a script to generate an enumeration guide for network vuln
 
 3. **Output**
 
-    The script will generate an `enumeration_guide.md` file in the specified output directory (`/Users/jonfab/Desktop/WebAppScan/`).
+    The script will generate an `enumeration_guide.md` file in the specified output directory (`YOURPATH/WebAppScan/`).
 
 ## Directory Structure
 
